@@ -6,59 +6,37 @@
 **Principal Investigator**: Jhuanglab
 **Contact**: hiekeen \[at\] gmail.com
 
-## Project Overview
+# Pig-to-Primate Orthotopic Liver Xenotransplantation with 10-Gene-Edited Porcine Donor  
+### Coagulation Dysregulation and Early Immune Activation: An Integrated Multi-Omics Study  
 
-**xenotransplantation** is a comprehensive, fully reproducible research compendium supporting the study:
+![Overview](https://via.placeholder.com/900x400.png?text=Study+Overview:+10-Gene-Edited+Pig+→+Tibetan+Macaque+Orthotopic+Liver+Xenotransplantation)  
+*(Figure: Surgical success with immediate bile production followed by rapid consumptive coagulopathy and macrophage-driven innate response)*
 
-> **"Integrated genomic and transcriptomic multi-omics defines molecular subtypes, clonal evolution trajectories, and therapeutic vulnerabilities in xenotransplantation"**
+### Abstract
+Liver xenotransplantation is the most promising strategy to solve the global shortage of donor livers. Although recent pig-to-human heart, kidney, and auxiliary liver transplants have proven surgical feasibility, coagulation dysregulation remains the major obstacle to long-term survival.
 
-xenotransplantation (MM) remains an incurable plasma cell malignancy despite recent therapeutic advances. Bulk sequencing approaches mask extensive intra-tumoral clonal heterogeneity and fail to capture immune microenvironment dynamics. This project addresses these limitations by performing deep **multi-omics profiling** on a large cohort of newly diagnosed and relapsed/refractory MM patients, integrating the following platforms on matched samples:
+Here we performed orthotopic liver xenotransplantation from our specific pathogen-free (SPF) **10-gene-edited** pig (GTKO/CMAHKO/β4GalNT2KO + hCD46/hCD55/hCD59/hTBM/hCD39/hEPCR/hCD47) into a Tibetan macaque. The graft showed immediate function (bile production within minutes) but the recipient rapidly developed severe consumptive coagulopathy with thrombocytopenia, fibrinogen depletion, PT/INR prolongation, and marked reduction of plasma von Willebrand factor (vWF) within 24 h.
 
--   Whole-genome sequencing (WGS, tumor + germline)
--   Bulk RNA sequencing (polyA + total RNA)
--   10x Genomics 3' and 5' single-cell RNA sequencing (scRNA-seq)
--   10x Genomics V(D)J single-cell BCR sequencing (scBCR-seq)
--   10x Genomics V(D)J single-cell TCR sequencing (scTCR-seq)
+Using species-specific multi-omics (transcriptomics + DIA-PASEF proteomics) on pre- and 24 h post-reperfusion biopsies, we demonstrate:
+- Dominant **recipient macrophage infiltration** and activation (phagosome, FcγR-mediated phagocytosis, ITGB1/ITGB5, PSMA2/PSMA5)
+- Strong enrichment of **complement and coagulation cascades** in the xenograft
+- Downregulation of porcine gluconeogenic enzymes indicating early metabolic compromise
+- Absence of early T-cell involvement, but IgM deposition suggesting humoral contribution
 
-### Key Scientific Aims
+These data reveal that, despite extensive genetic engineering, the principal early barriers in porcine-to-primate liver xenotransplantation are **macrophage-driven innate immunity** and **systemic coagulation exhaustion** via the complement–coagulation axis.
 
-1.  Define robust molecular subtypes of MM using integrated genomic and transcriptomic features\
-2.  Reconstruct clonal evolution and infer phylogenetic trees from WGS + scRNA-seq trajectories\
-3.  Characterize plasma cell phenotypic states (cycling, stress response, pre-plasma, drug-resistant)\
-4.  Map the bone marrow immune microenvironment and T-cell exhaustion trajectories\
-5.  Reconstruct clonal and receptor-specific B-cell and T-cell dynamics using paired scBCR/TCR data\
-6.  Identify actionable therapeutic vulnerabilities (e.g., synthetic lethality, immunotherapy targets)\
-7.  Develop multi-omics-based prognostic and predictive models for clinical outcome and treatment response
+### Key Findings
+| Barrier                     | Molecular Evidence                                  | Potential Targets                     |
+|----------------------------|------------------------------------------------------|----------------------------------------|
+| Consumptive coagulopathy   | vWF depletion, platelet/fibrinogen consumption, complement & coagulation cascade activation | vWF humanization, enhanced hTBM/EPCR/CD39 |
+| Innate immune activation   | Macrophage phagocytosis, ITGB1/5 ↑, PSMA2/5 ↑       | Anti-ITGB1/5, proteasome modulation, stronger CD47-SIRPα tuning |
+| Early metabolic stress     | PCK1, FBP1, GYS2 ↓                                  | Metabolic support strategies           |
 
-# Quick Start
 
-## 1. Clone the repository
+### Reference Genome & Annotation
+- Pig: Sus scrofa 11.1 (Sscrofa11.1)
+- Macaque: Macaca mulatta (Mmul_10)
 
-git clone https://github.com/jinyancool/xenotransplantation.git cd xenotransplantation
 
-## 2. Install conda environments
-
-conda env create -f envs/environment_python.yml conda env create -f envs/environment_r.yml conda activate mm_multiomics
-
-## 3. Example: Run the full Nextflow single-cell pipeline
-
-nextflow run workflows/nf-10x/main.nf -profile conda,singularity --outdir results/scRNA
-
-## Software Environment
-
--   Scanpy, Scirpy, MuData, scvi-tools, CellRank
--   Seurat, SeuratObject, Signac, ArchR
--   CellPhoneDB v4, LIANA+, NicheNet, Tensor-cell2cell
--   bcftools, GATK4, Delly, Manta, GRIDSS (WGS)
--   STAR, Salmon, kallisto, FusionCatcher (RNA-seq)
--   TensorFlow / PyTorch for deep learning-based subtype classification and trajectory inference
-
-Detailed environments are in `envs/`.
-
-## License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Funded by \[Your Funding Agency/Grant Number\]. We thank 10x Genomics, NanoString, and Akoya Biosciences for technical support and early-access programs.
+---
+**Keywords**: liver xenotransplantation • liver transplantation • genetic engineering • multi-omics • coagulation dysregulation • macrophage activation • non-human primate • Tibetan macaque
