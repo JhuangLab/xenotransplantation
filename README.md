@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/) [![Nextflow](https://img.shields.io/badge/nextflow-%3E%2023.10-099acd.svg)](https://www.nextflow.io) [![Snakemake](https://img.shields.io/badge/snakemake-%E2%89%A57.32-brightgreen.svg)](https://snakemake.readthedocs.io)
 
-**Repository**: https://github.com/jinyancool/MultipleMyeloma\
-**Principal Investigator**: Jhuanglab\
+**Repository**: https://github.com/jinyancool/xenotransplantation
+**Principal Investigator**: Jhuanglab
 **Contact**: hiekeen \[at\] gmail.com
 
 ## Project Overview
 
-**MultipleMyeloma** is a comprehensive, fully reproducible research compendium supporting the study:
+**xenotransplantation** is a comprehensive, fully reproducible research compendium supporting the study:
 
 > **"Integrated genomic and transcriptomic multi-omics defines molecular subtypes, clonal evolution trajectories, and therapeutic vulnerabilities in xenotransplantation"**
 
@@ -34,7 +34,7 @@ xenotransplantation (MM) remains an incurable plasma cell malignancy despite rec
 
 ## 1. Clone the repository
 
-git clone https://github.com/jinyancool/MultipleMyeloma.git cd MultipleMyeloma
+git clone https://github.com/jinyancool/xenotransplantation.git cd xenotransplantation
 
 ## 2. Install conda environments
 
